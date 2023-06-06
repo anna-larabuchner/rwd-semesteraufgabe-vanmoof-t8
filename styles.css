@@ -337,6 +337,7 @@ header {
 
 .specialty__text {
     line-height: 1.2;
+    letter-spacing: -0.03em;
 }
 
 .inactive {
@@ -353,6 +354,12 @@ header {
 
 .specialty__media-container {
     padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.test {
+
 }
 
 .specialty__media-img {
@@ -710,11 +717,20 @@ sl-checkbox label {
 
     /* Specialty Section */
     .specialty__wrapper {
-        flex-flow: row wrap;
+        height: 90vh;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-content: space-between;
     }
 
     .specialty__text-container {
-        width: 50%;
+        width: 45%;
+        padding-right: 20px;
+        order: 1;
+    }
+
+    .specialty__title {
+        font-size: 40px;
     }
 
     .specialty__highlight {
@@ -722,13 +738,36 @@ sl-checkbox label {
         width: 100%;
     }
 
-    .specialty__title {
-        font-size: 40px;
-    }
-
     .specialty__text {
         font-size: 28px;
     }
+
+    .specialty__media-container {
+        width: 45%;
+        margin: 0;
+    }
+
+    .test {
+        padding: 0 0 0 20px;
+        order: 3;
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .specialty__media-img {
+        margin: 0;
+        height: 35vh;
+    }
+
+    .test2 {
+        order: 2
+    }
+
+
 
 
     .break__container {
@@ -788,8 +827,5 @@ sl-checkbox label {
         padding: 0 70px;
     }
 
-    .specialty__media-text {
-        padding: 0 70px;
-    }
 }
 
