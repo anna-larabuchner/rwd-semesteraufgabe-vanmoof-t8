@@ -145,6 +145,9 @@ header {
 /* header section */
 
 .header__section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -205,6 +208,14 @@ header {
     align-items: center;
 }
 
+.videoloop__text {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
 
 
 /* Parallax: Details */
@@ -217,6 +228,17 @@ header {
     background-position: 53% 30%;
     background-size: cover;
     color: #fff;
+
+    /* display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; */
+    
+}
+
+.parallax__container {
+    height: 100%;
+    max-width: 1280px;  
+    padding: 0 20px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -236,7 +258,6 @@ header {
 }
 
 .parallax__highlight {
-    padding: 0 20px;
     width: 100%;
 }
 
@@ -324,7 +345,7 @@ header {
 
 .specialty__highlight {
     margin-top: 13px;
-    width: 80%;
+    width: 270px;
 
     font-weight: 500;
     line-height: 1.05;
@@ -351,7 +372,6 @@ header {
 }
 
 .specialty__media-text {
-    padding: 0 20px;
     font-size: 14px;
     line-height: 1.2;
 }
@@ -661,6 +681,11 @@ sl-checkbox label {
     }
 
     /* Parallax für looping video einfügen */
+    .videoloop__text {
+        font-size: 48px;
+    }
+
+
 
     .parallax__highlight {
         width: 80%;
@@ -723,7 +748,13 @@ sl-checkbox label {
 
 @media only screen and (min-width: 992px) {
 
+    h1 {
+        font-size: 200px;
+        line-height: 1;
+    }
+
     .header__section {
+        padding: 0 70px;
         display: flex;
         flex-flow: row wrap;
     }
@@ -739,6 +770,26 @@ sl-checkbox label {
 
     .header__carousel {
         order: 3;
+    }
+
+    .parallax__container{
+        padding: 0 70px;
+    }
+
+    .parallax__highlight {
+        width: 60%;
+    }
+
+    .specialty__text-container {
+        padding: 0 70px;
+    }
+
+    .specialty__media-container {
+        padding: 0 70px;
+    }
+
+    .specialty__media-text {
+        padding: 0 70px;
     }
 }
 
