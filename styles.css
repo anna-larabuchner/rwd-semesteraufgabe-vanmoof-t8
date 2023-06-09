@@ -59,7 +59,7 @@ h3 {
 }
 
 h4 {
-    font-weight: 500px;
+    font-weight: 600;
     font-size: 24px;
     line-height: 32px; 
     margin: 0;
@@ -238,6 +238,7 @@ header {
 .parallax__container {
     height: 100%;
     max-width: 1280px;  
+    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     flex-flow: column nowrap;
@@ -291,7 +292,6 @@ header {
 }
 
 .parallax__highlight-small {
-    padding: 0 20px;
     width: 100%;
     /* color: #fff; */    
 }
@@ -306,6 +306,9 @@ header {
 /* Specialty */
 
 .specialty__section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 96px 0 0;
 }
 
@@ -358,10 +361,6 @@ header {
     max-width: 1280px;
 }
 
-.test {
-
-}
-
 .specialty__media-img {
     width: 100%;
     height: 60vh;
@@ -405,21 +404,64 @@ header {
 
 
 
+
+/* Portrait Section */
+
+.portrait__section {
+    width: 100%;
+    height: calc(100vh - 120px);
+    padding: 0 20px;
+    color: #fff;
+    background-image: url('assets/imgs/sterntetraeder_09.png');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.portrait__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 22px 0;
+}
+
+.portrait__text-container {
+    width: 80%;
+}
+
+.portrait__heading {
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+}
+
+
+
+
 /* Summary */
 
-.summary {
+.summary__section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 100px 20px;
 }
 
-.heading-container {
+.summary__heading-container {
     text-align: center;
 }
 
-.subheading {
-    margin: 15px 15px 0;
+.summary__subheading {
+    width: 320px;
+    margin: 15px auto 0;
 }
 
+
+
 /* List */
+
+.list__container {
+    max-width: 700px;
+    margin: 0 auto;
+}
 
 .list {
     margin: 50px 0 0 0;
@@ -462,12 +504,18 @@ header {
     transition: transform 0.4s ease 0s;
 }
 
+
+
+
+
 .media__img {
-    height: 590px;
+    height: 80vh;
     background-image: url('assets/imgs/sterntetraeder_08.png');
     background-position: 78% 50%;
     background-size: cover;
 }
+
+
 
 
 /* Footer */
@@ -475,7 +523,7 @@ header {
 /* USP */
 
 .footer__usp {
-    padding: 24px 20px;
+    padding: 0 20px 24px 20px;
     background-color: #2C3033;
     color: #fff;
 }
@@ -503,6 +551,8 @@ header {
 }
 
 
+
+
 .footer__container {
     padding: 64px 20px 40px 20px;
     position: relative;
@@ -514,11 +564,11 @@ header {
 }
 
 .footer__newsletter-title {
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
     color: #fff;
     font-size: 22px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.06;
 }
 
 .footer__newsletter-text {
@@ -532,7 +582,7 @@ header {
 .footer__newsletter-form {
     background-color: #3e4246;
     border: 2px solid transparent;
-    border-radius: 30px;
+    border-radius: 36px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -545,7 +595,7 @@ label {
 
 .footer__newsletter-input {
     padding: 8px 8px 8px 21px;
-    height: 36px;
+    height: 50px;
     width: 100%;
     line-height: 24px;
     background-color: transparent;
@@ -560,7 +610,7 @@ label {
     padding: 0;
     position: relative;
     right: 6px;
-    width: 49.5px;
+    width: 44.5px;
     height: 40.25px;
     background-color: #191c1f;
     border: 1px solid transparent;
@@ -585,6 +635,7 @@ label {
 
 sl-checkbox label {
     font-size: 12px;
+    font-family: 'NeueHaasUnicaPro';
 }
 
 .footer__newsletter-checkbox-field {
@@ -608,6 +659,8 @@ sl-checkbox label {
     padding: 24px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     border-bottom: 1px solid rgba(256, 256, 256, 0.2);
 }
 
@@ -717,15 +770,15 @@ sl-checkbox label {
 
     /* Specialty Section */
     .specialty__wrapper {
-        height: 90vh;
+        height: 95vh;
         flex-flow: column wrap;
-        justify-content: space-between;
         align-content: space-between;
     }
 
     .specialty__text-container {
         width: 45%;
-        padding-right: 20px;
+        padding-right: 30px;
+        margin-bottom: 40px;
         order: 1;
     }
 
@@ -740,6 +793,7 @@ sl-checkbox label {
 
     .specialty__text {
         font-size: 28px;
+        line-height: 1.1;
     }
 
     .specialty__media-container {
@@ -747,10 +801,10 @@ sl-checkbox label {
         margin: 0;
     }
 
-    .test {
-        padding: 0 0 0 20px;
+    .media-container__img {
+        padding: 0;
         order: 3;
-        width: 50%;
+        width: 45%;
         height: 100%;
 
         display: flex;
@@ -760,11 +814,16 @@ sl-checkbox label {
 
     .specialty__media-img {
         margin: 0;
-        height: 35vh;
+        height: 50vh;
     }
 
-    .test2 {
-        order: 2
+    .media-container__vid {
+        order: 2;
+        padding-right: 20px;
+    }
+
+    .specialty__media-vid {
+        height: 20vh;
     }
 
 
@@ -780,7 +839,39 @@ sl-checkbox label {
         text-align: center;
     }
 
+
+
+    /* Portrait Section */
+
+    .portrait__heading {
+        font-size: 32px;
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+    }
+
+
+
+    /* Summary */
+
+    .summary__heading {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+
+
+
+    /* Footer */
+
+    /* USP */
+
+    .footer__usp {
+        padding: 0 70px 24px 70px;
+    }
+
 }
+
+
 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -819,13 +910,102 @@ sl-checkbox label {
         width: 60%;
     }
 
+
+
     .specialty__text-container {
         padding: 0 70px;
     }
 
-    .specialty__media-container {
+    .media-container__vid {
         padding: 0 70px;
     }
 
+
+
+
+    /* Portrait Section */
+
+    .portrait__section {
+        padding: 0 70px;
+    }
+
+
+
+    /* Summary */
+
+    .summary__section {
+        padding:  100px 70px 0;
+    }
+
+
+
+
+    /* Footer */
+
+    .footer__container {
+        padding: 64px 70px 40px;
+    }
+
+    .footer__layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+
+    /* Newsletter */
+
+    .footer__newsletter {
+        width: 30%;
+    }
+
+    .footer__newsletter-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+
+
+    /* Menu List */
+
+    .footer__menu-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 40px;
+        flex: 1 1 20vw;
+    }
+
+    .footer__menu-item {
+        padding: 0 0 24px 0;
+        border-bottom: none;
+    }
+
+
+    /* Arrow */
+
+    .footer__arrow-wrapper {
+        top: auto;
+        right: auto;
+        position: relative;
+    }
+
+
+    .footer__policies {
+        display: flex;
+        gap: 30px;
+    }
 }
 
+
+
+@media only screen and (min-width: 1024px){
+    
+    .footer__usp {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+    }
+
+}
