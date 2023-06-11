@@ -28,12 +28,14 @@
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     
     <!-- Own JS file -->
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
 
+    
     <title>VanMoof - T8</title>
   </head>
 
   <body>
+    
     <!-- Logo bar -->
     <header>
       <div class="logo__container">
@@ -213,10 +215,36 @@
         </div>
       </section>
 
+
+
       <!-- min-width 768px parallax -->
       <div class="break__container">
-        <p class="break__text">Noch einfacher geht wirklich nicht.</p>
+        <div class="selector">
+          <p class="break__text">Noch einfacher geht wirklich nicht.</p>
+        </div>
       </div>
+
+      <script>
+        window.onload = function () {
+           lax.init()
+           
+ 
+           // Add a driver that we use to control our animations
+           lax.addDriver('scrollY', function () {
+             return window.scrollY
+           })
+ 
+           // Add animation bindings to elements
+           lax.addElements('.selector', {
+             scrollY: {
+               opacity: [
+                 ["elInY", "elCenterY", "elOutY"],
+                 [1, 0.5, 0],
+               ]
+             }
+           })
+         }
+       </script>
 
       <!-- Portrait -->
       <section class="portrait__section">
