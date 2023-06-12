@@ -184,6 +184,34 @@ header {
   gap: 10px;
 }
 
+.button {
+  border: none;
+  color: #fff;
+  padding: 12px 23px;
+  border-radius: 30px;
+  font-family: NeueHaasUnicaPro;
+  font-size: 14px;
+  transition-duration: 0.4s;
+}
+
+.cta-button--primary {
+  background-color: var(--darkgrey);
+}
+
+.cta-button--primary:hover {
+  background-color: rgba(25, 28, 31, 0.8);
+}
+
+.cta-button--secondary {
+  background-color: #fff;
+  color: var(--darkgrey);
+  border: 2px solid #b1b9c5;
+}
+
+.cta-button--secondary:hover {
+  border: 2px solid rgba(25, 28, 31, 0.7);
+}
+
 /* Looping Detail Video */
 
 .videoloop__section {
@@ -304,7 +332,6 @@ header {
   letter-spacing: -0.02em;
   color: #fff;
 }
-
 
 /* Specialty */
 

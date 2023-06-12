@@ -31,8 +31,8 @@ window.onload = function () {
   lax.addElements(".presentation__heading-container", {
     scrollY: {
       scale: [
-        ["elInY+800", "elCenterY+500", "elCenterY+900"],
-        [1, 1, 0.7],
+        ["elCenterY+500", "elCenterY+900"],
+        [1, 0.7],
       ],
       opacity: [
         ["elCenterY+900", "elCenterY+1100", "elCenterY+1400"],
@@ -58,7 +58,7 @@ window.onload = function () {
       ],
       translateY: [
         ["elCenterY+500", "elCenterY+600", "elCenterY+1100"],
-        [+100, -100, -700],
+        [+100, -100, -600],
       ],
     },
   });
