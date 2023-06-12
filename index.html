@@ -107,7 +107,7 @@
 
       <!-- Looping Detail Video (min-with: 768px: with parallax effekt: view box downsizing, text appearce) -->
       <section class="videoloop__section" id="videoloop__section">
-        <div class="videoloop__container isSticky" id="videoloop__container">
+        <div class="videoloop__container" id="videoloop__container">
           <!-- <img 
           alt="Looping Video of Details of T8"
           src="assets/imgs/platzhalter-video-loop.jpg"
@@ -115,7 +115,7 @@
           <div class="animation__fadeIn">
             <h3 class="videoloop__text">Revolution integriert.</h3>
           </div>
-          <div class="frame"></div>
+          <div class="videoloop__frame"></div>
         </div>
       </section>
 
@@ -161,89 +161,78 @@
 
       <!-- Specialty -->
       <section class="specialty__section">
-        <div class="specialty__wrapper">
-          <div class="specialty__text-container">
-            <h2 class="specialty__heading">Ökologische Ästhetik</h2>
-            <p class="specialty__title">
-              Vergiss andere Dekoartikel. Nein, wirklich.
-            </p>
+        <!-- <div class="distance"></div> -->
+        <div class="specialty__container">
+          <div class="specialty__layout">
 
-            <div class="specialty__highlight">
-              <div class="specialty__body-line"></div>
-              <span class="specialty__text inactive">
-                Mit unserem VanMoof T8 kannst du deine Wohnung mit nur einem
-                Gegenstand ästhetisch aufwerten.
-              </span>
+            <div class="specialty__text-container" id="specialty__text-container">
+              <h2 class="specialty__heading">Ökologische Ästhetik</h2>
+              <p class="specialty__title">
+                Vergiss andere Dekoartikel. Nein, wirklich.
+              </p>
+
+              <div class="specialty__highlight">
+                <div class="specialty__body-line"></div>
+                <span class="specialty__text inactive">
+                  Mit unserem VanMoof T8 kannst du deine Wohnung mit nur einem
+                  Gegenstand ästhetisch aufwerten.
+                </span>
+              </div>
+
+              <div class="specialty__highlight">
+                <div class="specialty__body-line"></div>
+                <span class="specialty__text">
+                  Und wenn dich jemand fragt, ob das denn ökologisch wertvoll
+                  ist? Selbstverständlich ist es das.
+                </span>
+              </div>
             </div>
 
-            <div class="specialty__highlight">
-              <div class="specialty__body-line"></div>
-              <span class="specialty__text">
-                Und wenn dich jemand fragt, ob das denn ökologisch wertvoll ist?
-                Selbstverständlich ist es das.
-              </span>
+            <div class="specialty__media-container media-container__img" id="media-container__img">
+              <img
+                alt="T8 - turned towards right"
+                src="assets/imgs/sterntetraeder_06.png"
+                class="specialty__media-img"
+              />
             </div>
-          </div>
 
-          <div class="specialty__media-container media-container__img">
-            <img
-              alt="T8 - turned towards right"
-              src="assets/imgs/sterntetraeder_06.png"
-              class="specialty__media-img"
-            />
-          </div>
+            <div class="specialty__media-container media-container__vid" id="media-container__vid">
+              <img
+                alt="T8 - turned towards right"
+                src="assets/imgs/sterntetraeder_06.png"
+                class="specialty__media-vid"
+              />
+              <p class="specialty__media-text">
+                Mit dem VanMoof T8 holst du dir nicht nur ein ästhetisch und
+                nachhaltiges Dekoobjekt ins Haus, du tust auch noch etwas für
+                die Umwelt. Unser T8 besteht zu 100% aus Holzabfällen.
+              </p>
+            </div>
 
-          <div class="specialty__media-container media-container__vid">
-            <img
-              alt="T8 - turned towards right"
-              src="assets/imgs/sterntetraeder_06.png"
-              class="specialty__media-vid"
-            />
-            <p class="specialty__media-text">
-              Mit dem VanMoof T8 holst du dir nicht nur ein ästhetisch und
-              nachhaltiges Dekoobjekt ins Haus, du tust auch noch etwas für die
-              Umwelt. Unser T8 besteht zu 100% aus Holzabfällen.
-            </p>
-          </div>
-
-          <!-- <div class="specialty__media-text-container">
+            <!-- <div class="specialty__media-text-container">
             <p class="specialty__media-text">
               Mit dem VanMoof T8 holst du dir nicht nur ein ästhetisch und
               nachhaltiges Dekoobjekt ins Haus, du tust auch noch etwas für die
               Umwelt. Unser T8 besteht zu 100% aus Holzabfällen.
             </p>
           </div> -->
+          </div>
+
+          <!-- min-width 768px parallax -->
+          <div class="break__container">
+            <div class="break__frame">
+              <p class="break__text">Noch einfacher geht wirklich nicht.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- min-width 768px parallax -->
-      <div class="break__container">
+      <!-- <div class="break__container">
         <div class="selector">
           <p class="break__text">Noch einfacher geht wirklich nicht.</p>
         </div>
-      </div>
-
-      <!-- <script>
-        window.onload = function () {
-           lax.init()
-           
- 
-           // Add a driver that we use to control our animations
-           lax.addDriver('scrollY', function () {
-             return window.scrollY
-           })
- 
-           // Add animation bindings to elements
-           lax.addElements('.selector', {
-             scrollY: {
-               opacity: [
-                 ["elInY", "elCenterY", "elOutY"],
-                 [1, 0.5, 0],
-               ]
-             }
-           })
-         }
-       </script> -->
+      </div> -->
 
       <!-- Portrait -->
       <section class="portrait__section">

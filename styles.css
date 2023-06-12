@@ -200,15 +200,12 @@ header {
     justify-content: center;
 }
 
-.isSticky {
-    position: sticky;
-}
-
 .videoloop__container {
     height: 100vh;
     width: 100%;
     position: sticky;
     top: 0px;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -216,7 +213,7 @@ header {
     overflow: hidden;
 }
 
-.frame {
+.videoloop__frame {
     background-image: url('assets/imgs/platzhalter-video-loop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,16 +221,6 @@ header {
     height: 100%;
     z-index: -1;
 }
-
-/* 
-.frame {
-    border: 200px solid pink;
-    border-left-width: 50vw;
-    border-right-width: 50vw;
-    padding: 300px 240px;
-    overflow: hidden;
-} */
-
 
 .animation__fadeIn {
     position: absolute;
@@ -346,7 +333,7 @@ header {
     padding: 96px 0 0;
 }
 
-.specialty__wrapper {
+.specialty__layout {
     display: flex;
     flex-flow: column nowrap;
 }
@@ -424,7 +411,7 @@ header {
 .break__container {
     width: 100%;
     height: 210px;
-    position: sticky;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -804,7 +791,23 @@ sl-checkbox label {
 
 
     /* Specialty Section */
-    .specialty__wrapper {
+
+    .distance {
+        height: 10vh;
+    }
+
+    .specialty__section {
+        height: 400vh;
+        position: relative;
+    }
+
+    .specialty__container {
+        height: 100vh;
+        position: sticky;
+        top: 100px;
+    }
+
+    .specialty__layout {
         height: 95vh;
         flex-flow: column wrap;
         align-content: space-between;
@@ -861,12 +864,12 @@ sl-checkbox label {
         height: 20vh;
     }
 
-
-
-
     .break__container {
         width: 100%;
         height: calc(100vh - 120px);
+
+        position: absolute;
+        top: 0px;
     }  
     
     .break__text {
@@ -895,7 +898,6 @@ sl-checkbox label {
 
 
 
-
     /* Footer */
 
     /* USP */
@@ -918,6 +920,8 @@ sl-checkbox label {
         line-height: 1;
     }
 
+    /* Header */
+
     .header__section {
         padding: 0 70px;
         display: flex;
@@ -937,6 +941,8 @@ sl-checkbox label {
         order: 3;
     }
 
+
+
     .parallax__container{
         padding: 0 70px;
     }
@@ -947,6 +953,8 @@ sl-checkbox label {
 
 
 
+    /* Specialty Section */
+
     .specialty__text-container {
         padding: 0 70px;
     }
@@ -954,7 +962,6 @@ sl-checkbox label {
     .media-container__vid {
         padding: 0 70px;
     }
-
 
 
 
@@ -1000,7 +1007,6 @@ sl-checkbox label {
     }
 
 
-
     /* Menu List */
 
     .footer__menu-list {
@@ -1026,12 +1032,12 @@ sl-checkbox label {
         position: relative;
     }
 
-
     .footer__policies {
         display: flex;
         gap: 30px;
     }
 }
+
 
 
 
