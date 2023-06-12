@@ -12,8 +12,8 @@ window.onload = function () {
       scale: [
         ["elInY", "elCenterY", "elOutY"],
         {
-          599: [1, 1, 0.8],
-          600: [1, 1, 0.5],
+          992: [1, 1, 0.8],
+          993: [1, 1, 0.5],
         }
       ],
     },
@@ -28,15 +28,56 @@ window.onload = function () {
     },
   });
 
+  lax.addElements(".presentation__heading-container", {
+    scrollY: {
+      scale: [
+        ["elInY", "elCenterY", "elOutY"],
+        [1, 1, 0.7],
+      ],
+      opacity: [
+        ["elInY", "elCenterY", "elOutY"],
+        [1, 1, 0],
+      ],
+    },
+  });
+
+  lax.addElements(".presentation__highlight", {
+    scrollY: {
+      opacity: [
+        ["elInY", "elCenterY", "elOutY"],
+        [1, 1, 0],
+      ],
+    },
+  });
+
+  lax.addElements(".presentation__highlight-big", {
+    scrollY: {
+      opacity: [
+        ["elInY", "elCenterY", "elOutY"],
+        [0, 0, 1],
+      ],
+      translateY: [
+        ["elInY", "elCenterY", "elOutY"],
+        [+100, 0, -700],
+      ]
+    },
+  });
+
   lax.addElements("#specialty__text-container", {
     scrollY: {
       opacity: [
         ["elInY", "elCenterY", "elOutY"],
-        [1, 0.7, 0],
+        {
+          768: [1, 1, 1],
+          769: [1, 0.7, 0],
+        }
       ],
       translateX: [
         ["elInY", "elCenterY", "elOutY"],
-        [0, 0, -100],
+        {
+          768: [1, 1, 1],
+          769: [0, 0, -100],
+        }
       ]
     }
   });
@@ -45,11 +86,17 @@ window.onload = function () {
     scrollY: {
       opacity: [
         ["elInY", "elCenterY", "elOutY"],
-        [1, 0.7, 0],
+        {
+          768: [1, 1, 1],
+          769: [1, 0.7, 0],
+        }
       ],
       translateX: [
         ["elInY", "elCenterY", "elOutY"],
-        [0, 0, -100],
+        {
+          768: [1, 1, 1],
+          769: [0, 0, -100],
+        }
       ]
     }
   });
@@ -58,11 +105,17 @@ window.onload = function () {
     scrollY: {
       opacity: [
         ["elInY", "elCenterY", "elOutY"],
-        [1, 0.7, 0],
+        {
+          768: [1, 1, 1],
+          769: [1, 0.7, 0],
+        }
       ],
       translateX: [
         ["elInY", "elCenterY", "elOutY"],
-        [0, 0, +100],
+        {
+          768: [1, 1, 1],
+          769: [0, 0, +100],
+        }
       ]
     }
   });
@@ -71,14 +124,40 @@ window.onload = function () {
     scrollY: {
       opacity: [
         ["elInY", "elCenterY", "elOutY"],
-        [0, 0, 1],
+        {
+          768: [1, 1, 1],
+          769: [0, 0, 1],
+        }
       ],
       scale: [
         ["elInY", "elCenterY", "elOutY"],
-        [0, 0.3, 1],
+        {
+          768: [1, 1, 1],
+          769: [0, 0.3, 1],
+        }
       ],
     },
   });
 
+  lax.addElements(".portrait__highlight", {
+    scrollY: {
+      opacity: [
+        ["elInY", "elCenterY", "elOutY"],
+        [0, 0.3, 1],
+        // {
+        //   768: [1, 1, 1],
+        //   769: [1, 0.7, 0],
+        // }
+      ],
+      // translateY: [
+      //   ["elInY", "elCenterY", "elOutY"],
+
+      //   {
+      //     768: [1, 1, 1],
+      //     769: [0, 0, -100],
+      //   }
+      // ]
+    }
+  });
 };
 
