@@ -14,7 +14,7 @@ window.onload = function () {
         {
           992: [1, 1, 0.8],
           993: [1, 1, 0.5],
-        }
+        },
       ],
     },
   });
@@ -31,11 +31,11 @@ window.onload = function () {
   lax.addElements(".presentation__heading-container", {
     scrollY: {
       scale: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elInY+800", "elCenterY+500", "elCenterY+900"],
         [1, 1, 0.7],
       ],
       opacity: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+900", "elCenterY+1100", "elCenterY+1400"],
         [1, 1, 0],
       ],
     },
@@ -44,7 +44,7 @@ window.onload = function () {
   lax.addElements(".presentation__highlight", {
     scrollY: {
       opacity: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elInY+100", "elCenterY+100", "elOutY+100"],
         [1, 1, 0],
       ],
     },
@@ -53,13 +53,13 @@ window.onload = function () {
   lax.addElements(".presentation__highlight-big", {
     scrollY: {
       opacity: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+500", "elCenterY+600", "elCenterY+1100"],
         [0, 0, 1],
       ],
       translateY: [
-        ["elInY", "elCenterY", "elOutY"],
-        [+100, 0, -700],
-      ]
+        ["elCenterY+500", "elCenterY+600", "elCenterY+1100"],
+        [+100, -100, -700],
+      ],
     },
   });
 
@@ -70,16 +70,16 @@ window.onload = function () {
         {
           768: [1, 1, 1],
           769: [1, 0.7, 0],
-        }
+        },
       ],
       translateX: [
         ["elInY", "elCenterY", "elOutY"],
         {
           768: [1, 1, 1],
           769: [0, 0, -100],
-        }
-      ]
-    }
+        },
+      ],
+    },
   });
 
   lax.addElements("#media-container__vid", {
@@ -89,16 +89,16 @@ window.onload = function () {
         {
           768: [1, 1, 1],
           769: [1, 0.7, 0],
-        }
+        },
       ],
       translateX: [
         ["elInY", "elCenterY", "elOutY"],
         {
           768: [1, 1, 1],
           769: [0, 0, -100],
-        }
-      ]
-    }
+        },
+      ],
+    },
   });
 
   lax.addElements("#media-container__img", {
@@ -108,16 +108,16 @@ window.onload = function () {
         {
           768: [1, 1, 1],
           769: [1, 0.7, 0],
-        }
+        },
       ],
       translateX: [
         ["elInY", "elCenterY", "elOutY"],
         {
           768: [1, 1, 1],
           769: [0, 0, +100],
-        }
-      ]
-    }
+        },
+      ],
+    },
   });
 
   lax.addElements(".break__frame", {
@@ -127,14 +127,14 @@ window.onload = function () {
         {
           768: [1, 1, 1],
           769: [0, 0, 1],
-        }
+        },
       ],
       scale: [
         ["elInY", "elCenterY", "elOutY"],
         {
           768: [1, 1, 1],
           769: [0, 0.3, 1],
-        }
+        },
       ],
     },
   });
@@ -142,22 +142,13 @@ window.onload = function () {
   lax.addElements(".portrait__highlight", {
     scrollY: {
       opacity: [
-        ["elInY", "elCenterY", "elOutY"],
-        [0, 0.3, 1],
+        ["elInY+800", "elInY+1300"],
+        [1, 0],
         // {
         //   768: [1, 1, 1],
         //   769: [1, 0.7, 0],
-        // }
+        // },
       ],
-      // translateY: [
-      //   ["elInY", "elCenterY", "elOutY"],
-
-      //   {
-      //     768: [1, 1, 1],
-      //     769: [0, 0, -100],
-      //   }
-      // ]
-    }
+    },
   });
 };
-

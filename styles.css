@@ -233,7 +233,7 @@ header {
 /* Presentation Section */
 
 .presentation__section {
-  height: 600vh;
+  height: 500vh;
   position: relative;
 }
 
@@ -289,6 +289,7 @@ header {
 .presentation__highlight-big {
   position: absolute;
   bottom: 0px;
+  padding-right: 20px;
 }
 
 .highlight-big__heading {
@@ -446,6 +447,7 @@ header {
   width: 100%;
   position: absolute;
   bottom: 0px;
+  padding-bottom: 20px;
 }
 
 /* Summary */
