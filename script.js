@@ -66,17 +66,17 @@ window.onload = function () {
   lax.addElements("#specialty__text-container", {
     scrollY: {
       opacity: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+900", "elCenterY+1100"],
         {
-          768: [1, 1, 1],
-          769: [1, 0.7, 0],
+          768: [1, 1],
+          769: [1, 0],
         },
       ],
       translateX: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+900", "elCenterY+1100"],
         {
-          768: [1, 1, 1],
-          769: [0, 0, -100],
+          768: [1, 1],
+          769: [0, -100],
         },
       ],
     },
@@ -85,17 +85,17 @@ window.onload = function () {
   lax.addElements("#media-container__vid", {
     scrollY: {
       opacity: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+500", "elCenterY+700"],
         {
-          768: [1, 1, 1],
-          769: [1, 0.7, 0],
+          768: [1, 1],
+          769: [1, 0],
         },
       ],
       translateX: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+500", "elCenterY+700"],
         {
-          768: [1, 1, 1],
-          769: [0, 0, -100],
+          768: [1, 1],
+          769: [0, -100],
         },
       ],
     },
@@ -104,17 +104,17 @@ window.onload = function () {
   lax.addElements("#media-container__img", {
     scrollY: {
       opacity: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+800", "elCenterY+1000"],
         {
-          768: [1, 1, 1],
-          769: [1, 0.7, 0],
+          768: [1, 1],
+          769: [1, 0],
         },
       ],
       translateX: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+800", "elCenterY+1000"],
         {
-          768: [1, 1, 1],
-          769: [0, 0, +100],
+          768: [1, 1],
+          769: [0, +100],
         },
       ],
     },
@@ -123,17 +123,17 @@ window.onload = function () {
   lax.addElements(".break__frame", {
     scrollY: {
       opacity: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+900", "elCenterY+1000", "elCenterY+1600"],
         {
           768: [1, 1, 1],
           769: [0, 0, 1],
         },
       ],
       scale: [
-        ["elInY", "elCenterY", "elOutY"],
+        ["elCenterY+900", "elCenterY+1000", "elCenterY+1600"],
         {
           768: [1, 1, 1],
-          769: [0, 0.3, 1],
+          769: [0, 0.5, 1],
         },
       ],
     },

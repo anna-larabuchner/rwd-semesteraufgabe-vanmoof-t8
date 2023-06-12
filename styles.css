@@ -401,7 +401,7 @@ header {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.05em;
 }
 
 /* Portrait Section */
@@ -768,14 +768,14 @@ sl-checkbox label {
   }
 
   .specialty__section {
-    height: 400vh;
+    height: 500vh;
     position: relative;
   }
 
   .specialty__container {
     height: 100vh;
     position: sticky;
-    top: 100px;
+    top: 50px;
   }
 
   .specialty__layout {
@@ -849,6 +849,10 @@ sl-checkbox label {
   }
 
   /* Portrait Section */
+
+  .portrait__text-container {
+    width: 80%;
+  }
 
   .portrait__heading {
     font-size: 32px;
