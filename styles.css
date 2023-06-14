@@ -303,7 +303,7 @@ header {
 }
 
 .presentation__hightlight-text {
-  margin: 0 0 10px;
+  margin: 0 20px 10px 0;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
@@ -935,7 +935,7 @@ sl-checkbox label {
   /* Presentation Section */
 
   .presentation__container {
-    padding: 0 70px;
+    padding: 40px 70px 0;
   }
 
   .presentation__highlight {
@@ -961,7 +961,7 @@ sl-checkbox label {
   /* Summary */
 
   .summary__section {
-    padding: 100px 70px 0;
+    padding: 100px 70px;
   }
 
   /* Footer */
@@ -1018,13 +1018,29 @@ sl-checkbox label {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .presentation__container {
+    padding: 60px 70px 0;
+  }
+
   .portrait__container {
     padding: 58px 70px;
   }
 
-  .footer__usp {
+  .portrait__text-container {
+    width: 60%;
+  }
+
+  .footer__usp-layout {
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
     gap: 20px;
+  }
+
+  .footer__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }

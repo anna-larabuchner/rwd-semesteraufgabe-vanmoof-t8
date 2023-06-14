@@ -95,9 +95,7 @@
           </p>
           <p class="header__price">109 €</p>
           <div class="header__cta-buttons">
-            <button class="button cta-button--primary">
-              Jetzt kaufen
-            </button>
+            <button class="button cta-button--primary">Jetzt kaufen</button>
             <button class="button cta-button--secondary">
               Im Store erleben
             </button>
@@ -123,7 +121,6 @@
       <section class="presentation__section">
         <div class="presentation__container">
           <div class="presentation__layout">
-
             <div class="presentation__heading-container">
               <h3 class="presentation__subheading">Alles neu alles Holz</h3>
               <h2 class="presentation__heading">Unsere nächste Generation</h2>
@@ -135,7 +132,9 @@
                 setzen unsere brandneuen E-Bikes einen neuen Standard für
                 Fahrer*innen weltweit.
               </p>
-              <p class="presentation__hightlight-text presentation__highlight-size">
+              <p
+                class="presentation__hightlight-text presentation__highlight-size"
+              >
                 Größe: xxxxxxxx
               </p>
             </div>
@@ -152,7 +151,6 @@
                 kannst.
               </p>
             </div>
-
           </div>
         </div>
       </section>
@@ -340,61 +338,161 @@
 
     <footer>
       <div class="footer__usp">
-        <div class="footer__usp-item">
-          <img alt="Icon: Truck" src="assets/svgs/Truck-white.svg" />
-          <div>
-            <p class="footer__usp-heading">Kostenlose Rückgabe, ohne Fragen</p>
-            <a class="footer__usp-link"> Erfahre mehr </a>
+        <div class="footer__usp-layout">
+          <div class="footer__usp-item">
+            <img alt="Icon: Truck" src="assets/svgs/Truck-white.svg" />
+            <div>
+              <p class="footer__usp-heading">
+                Kostenlose Rückgabe, ohne Fragen
+              </p>
+              <a class="footer__usp-link"> Erfahre mehr </a>
+            </div>
           </div>
-        </div>
 
-        <div class="footer__usp-item">
-          <img
-            alt="Icon: Support Agent"
-            src="assets/svgs/SupportAgent-white.svg"
-          />
-          <div>
-            <p class="footer__usp-heading">
-              Können wir dir weiterhelfen? Das tun wir gerne
-            </p>
-            <a class="footer__usp-link"> Kontaktiere uns </a>
+          <div class="footer__usp-item">
+            <img
+              alt="Icon: Support Agent"
+              src="assets/svgs/SupportAgent-white.svg"
+            />
+            <div>
+              <p class="footer__usp-heading">
+                Können wir dir weiterhelfen? Das tun wir gerne
+              </p>
+              <a class="footer__usp-link"> Kontaktiere uns </a>
+            </div>
           </div>
-        </div>
 
-        <div class="footer__usp-item">
-          <img alt="Icon: Bike" src="assets/svgs/Bike-white.svg" />
-          <div>
-            <p class="footer__usp-heading">Kostenlose Rückgabe, ohne Fragen</p>
-            <a class="footer__usp-link"> Artikel lesen </a>
+          <div class="footer__usp-item">
+            <img alt="Icon: Bike" src="assets/svgs/Bike-white.svg" />
+            <div>
+              <p class="footer__usp-heading">
+                Kostenlose Rückgabe, ohne Fragen
+              </p>
+              <a class="footer__usp-link"> Artikel lesen </a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="footer__container">
-        <div class="footer__layout">
-          <div class="footer__newsletter">
-            <p class="footer__newsletter-title">Bleib auf dem Laufenden</p>
-            <p class="footer__newsletter-text">
-              Abonniere unseren Newsletter für Updates per Email
-            </p>
+        <div class="footer__wrapper">
+          <div class="footer__layout">
+            <div class="footer__newsletter">
+              <p class="footer__newsletter-title">Bleib auf dem Laufenden</p>
+              <p class="footer__newsletter-text">
+                Abonniere unseren Newsletter für Updates per Email
+              </p>
 
-            <div class="footer__newsletter-form">
-              <label for="mail_input"></label>
-              <input
-                type="email"
-                name="email"
-                id="mail_input"
-                placeholder="name@email.com"
-                class="footer__newsletter-input"
-              />
+              <div class="footer__newsletter-form">
+                <label for="mail_input"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="mail_input"
+                  placeholder="name@email.com"
+                  class="footer__newsletter-input"
+                />
 
-              <button
-                type="submit"
-                class="footer__newsletter-submit"
-                aria-label="E-Mail abschicken"
-              >
+                <button
+                  type="submit"
+                  class="footer__newsletter-submit"
+                  aria-label="E-Mail abschicken"
+                >
+                  <svg
+                    class="footer__newsletter-arrow"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="footer__newsletter-checkbox">
+                <sl-checkbox
+                  class="footer__newsletter-checkbox-field"
+                  value="email"
+                  required
+                >
+                  Ich akzeptiere die Datenschutzbestimmungen
+                </sl-checkbox>
+                <!-- <input class="footer__newsletter-checkbox-field" type="checkbox" id="consent" value="email" required>
+            <label class="footer__newsletter-checkbox-label" for="consent">
+              <span>Ich akzeptiere die Datenschutzbestimmungen</span>
+            </label> -->
+              </div>
+            </div>
+
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <span class="footer__menu-title">Erfahre mehr</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 14V8L0 8V6L6 6V0H8V6V8V14H6ZM9 8H14V6H9V8Z"
+                      fill="white"
+                    />
+                  </svg>
+                </li>
+
+                <li class="footer__menu-item">
+                  <span class="footer__menu-title">Über uns</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 14V8L0 8V6L6 6V0H8V6V8V14H6ZM9 8H14V6H9V8Z"
+                      fill="white"
+                    />
+                  </svg>
+                </li>
+
+                <li class="footer__menu-item">
+                  <span class="footer__menu-title">Kontakt</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 14V8L0 8V6L6 6V0H8V6V8V14H6ZM9 8H14V6H9V8Z"
+                      fill="white"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__arrow-wrapper">
+              <a href="#" class="footer__arrow-link" aria-label="scroll to top">
                 <svg
-                  class="footer__newsletter-arrow"
+                  class="footer__arrow"
                   fill="none"
                   stroke="currentColor"
                   stroke-width="1.5"
@@ -405,130 +503,38 @@
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
                   ></path>
                 </svg>
-              </button>
-            </div>
-
-            <div class="footer__newsletter-checkbox">
-              <sl-checkbox
-                class="footer__newsletter-checkbox-field"
-                value="email"
-                required
-              >
-                Ich akzeptiere die Datenschutzbestimmungen
-              </sl-checkbox>
-              <!-- <input class="footer__newsletter-checkbox-field" type="checkbox" id="consent" value="email" required>
-            <label class="footer__newsletter-checkbox-label" for="consent">
-              <span>Ich akzeptiere die Datenschutzbestimmungen</span>
-            </label> -->
+              </a>
             </div>
           </div>
 
-          <div class="footer__menu">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <span class="footer__menu-title">Erfahre mehr</span>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6 14V8L0 8V6L6 6V0H8V6V8V14H6ZM9 8H14V6H9V8Z"
-                    fill="white"
-                  />
-                </svg>
-              </li>
+          <div class="footer__icons-wrapper">
+            <img src="assets/imgs/facebook.png" alt="facebook icon" />
+            <img src="assets/imgs/Instagram.png" alt="instagram icon" />
+            <img src="assets/imgs/Twitter.png" alt="twitter icon" />
+            <img src="assets/imgs/Youtube.png" alt="youtube icon" />
+          </div>
 
-              <li class="footer__menu-item">
-                <span class="footer__menu-title">Über uns</span>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6 14V8L0 8V6L6 6V0H8V6V8V14H6ZM9 8H14V6H9V8Z"
-                    fill="white"
-                  />
-                </svg>
-              </li>
+          <div class="footer__bottom">
+            <div class="footer__country">
+              <img
+                src="assets/imgs/de.png"
+                alt="Deutschland"
+                width="24px"
+                height="24px"
+              />
+              <span>Deutschland (Deutsch)</span>
+            </div>
 
-              <li class="footer__menu-item">
-                <span class="footer__menu-title">Kontakt</span>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6 14V8L0 8V6L6 6V0H8V6V8V14H6ZM9 8H14V6H9V8Z"
-                    fill="white"
-                  />
-                </svg>
-              </li>
+            <ul class="footer__policies">
+              <li class="footer__policies-item">Datenschutzbestimmungen</li>
+              <li class="footer__policies-item">Geschäftsbedingungen</li>
+              <li class="footer__policies-item">Cookie-Richtlinie</li>
+              <li class="footer__policies-item">Impressum</li>
             </ul>
           </div>
-
-          <div class="footer__arrow-wrapper">
-            <a href="#" class="footer__arrow-link" aria-label="scroll to top">
-              <svg
-                class="footer__arrow"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer__icons-wrapper">
-          <img src="assets/imgs/facebook.png" alt="facebook icon" />
-          <img src="assets/imgs/Instagram.png" alt="instagram icon" />
-          <img src="assets/imgs/Twitter.png" alt="twitter icon" />
-          <img src="assets/imgs/Youtube.png" alt="youtube icon" />
-        </div>
-
-        <div class="footer__bottom">
-          <div class="footer__country">
-            <img
-              src="assets/imgs/de.png"
-              alt="Deutschland"
-              width="24px"
-              height="24px"
-            />
-            <span>Deutschland (Deutsch)</span>
-          </div>
-
-          <ul class="footer__policies">
-            <li class="footer__policies-item">Datenschutzbestimmungen</li>
-            <li class="footer__policies-item">Geschäftsbedingungen</li>
-            <li class="footer__policies-item">Cookie-Richtlinie</li>
-            <li class="footer__policies-item">Impressum</li>
-          </ul>
         </div>
       </div>
     </footer>
