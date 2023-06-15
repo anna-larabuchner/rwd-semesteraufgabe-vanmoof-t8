@@ -50,13 +50,6 @@ h3 {
   padding: 0;
 }
 
-/* sinnvoll? */
-.h3 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 h4 {
   font-weight: 600;
   font-size: 24px;
@@ -80,13 +73,6 @@ p {
   padding: 0;
 }
 
-.highlight-text {
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  color: #fff;
-}
 
 /* normalize */
 
@@ -115,11 +101,8 @@ header {
   padding: 0;
 }
 
-.padding20 {
-  padding: 0 20px;
-}
+/* header */
 
-/* header section */
 /* logo bar */
 
 .logo__container {
@@ -136,6 +119,7 @@ header {
   height: 34px;
   width: 152px;
 }
+
 
 /* main */
 
@@ -162,6 +146,7 @@ header {
 
 .header__teaser {
   margin: 0 0 80px 0;
+  padding: 0 20px;
   flex: 0 0 50%;
 }
 
@@ -214,7 +199,7 @@ header {
 
 /* Looping Detail Video */
 
-.videoloop__section {
+.slogan__section {
   height: 250vh;
   width: 100%;
   top: 0px;
@@ -222,7 +207,7 @@ header {
   justify-content: center;
 }
 
-.videoloop__container {
+.slogan__container {
   height: 100vh;
   width: 100%;
   position: sticky;
@@ -235,7 +220,7 @@ header {
   overflow: hidden;
 }
 
-.videoloop__frame {
+.slogan__frame {
   background-image: url("assets/imgs/platzhalter-video-loop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,11 +229,11 @@ header {
   z-index: -1;
 }
 
-.animation__fadeIn {
+.slogan__text-container {
   position: absolute;
 }
 
-.videoloop__text {
+.slogan__text {
   font-size: 24px;
   position: sticky;
   top: 50vh;
@@ -272,6 +257,7 @@ header {
   position: sticky;
   top: 0px;
 
+
   color: #fff;
   background-image: url("assets/imgs/sterntetraeder_06.png");
   background-position: 53% 30%;
@@ -284,9 +270,6 @@ header {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  /* display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between; */
 }
 
 .presentation__heading-container {
@@ -333,6 +316,7 @@ header {
   color: #fff;
 }
 
+
 /* Specialty */
 
 .specialty__section {
@@ -371,10 +355,6 @@ header {
 .specialty__text {
   line-height: 1.2;
   letter-spacing: -0.03em;
-}
-
-.inactive {
-  opacity: 0.2;
 }
 
 .specialty__highlight {
@@ -762,7 +742,7 @@ sl-checkbox label {
   }
 
   /* Parallax für looping video einfügen */
-  .videoloop__text {
+  .slogan__text {
     font-size: 48px;
   }
 
@@ -1021,6 +1001,9 @@ sl-checkbox label {
 
   .presentation__container {
     padding: 60px 70px 0;
+
+    background-image: url(assets/anims/anim-1.jpg);
+    background-repeat: no-repeat;
   }
 
   .portrait__container {

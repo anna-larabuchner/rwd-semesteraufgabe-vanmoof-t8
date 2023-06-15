@@ -7,7 +7,7 @@ window.onload = function () {
   });
 
   // Add animation bindings to elements
-  lax.addElements(".videoloop__frame", {
+  lax.addElements(".slogan__frame", {
     scrollY: {
       scale: [
         ["elInY", "elCenterY", "elOutY"],
@@ -19,7 +19,7 @@ window.onload = function () {
     },
   });
 
-  lax.addElements(".animation__fadeIn", {
+  lax.addElements(".slogan__text-container", {
     scrollY: {
       opacity: [
         ["elInY", "elCenterY", "elOutY"],
@@ -151,4 +151,4 @@ window.onload = function () {
       ],
     },
   });
-};
+}
