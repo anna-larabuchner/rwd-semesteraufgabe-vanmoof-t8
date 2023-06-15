@@ -73,7 +73,6 @@ p {
   padding: 0;
 }
 
-
 /* normalize */
 
 html {
@@ -120,7 +119,6 @@ header {
   width: 152px;
 }
 
-
 /* main */
 
 /* header section */
@@ -135,6 +133,11 @@ header {
 
 .header__container {
   flex: 0 0 50%;
+}
+
+.header__subtitle {
+  color: #6d747d;
+  font-size: 20px;
 }
 
 /* Carousel and Product Teaser */
@@ -221,7 +224,7 @@ header {
 }
 
 .slogan__frame {
-  background-image: url("assets/imgs/platzhalter-video-loop.jpg");
+  background-image: url("assets/imgs/woodstructure.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -256,7 +259,6 @@ header {
   padding: 40px 0 0;
   position: sticky;
   top: 0px;
-
 
   color: #fff;
   background-image: url("assets/imgs/sterntetraeder_06.png");
@@ -315,7 +317,6 @@ header {
   letter-spacing: -0.02em;
   color: #fff;
 }
-
 
 /* Specialty */
 
@@ -376,7 +377,7 @@ header {
   height: 60vh;
   margin: 0 0 24px;
   object-fit: cover;
-  object-position: 55% 50%;
+  object-position: 50% 45%;
 }
 
 .specialty__media-vid {
@@ -426,7 +427,7 @@ header {
   top: 0px;
 
   color: #fff;
-  background-image: url("assets/imgs/sterntetraeder_09.png");
+  background-image: url("assets/imgs/t8_above.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -522,9 +523,16 @@ header {
   transition: transform 0.4s ease 0s;
 }
 
+.list__svg:hover {
+  transform: rotate(60deg);
+}
+
+
+/* IMG */
+
 .media__img {
   height: 80vh;
-  background-image: url("assets/imgs/sterntetraeder_08.png");
+  background-image: url("assets/imgs/t8_left-detail.jpg");
   background-position: 78% 50%;
   background-size: cover;
 }
@@ -594,6 +602,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.footer__newsletter-form:hover {
+  background-color: #4b5055;
 }
 
 label {
@@ -607,7 +620,6 @@ label {
   width: 100%;
   line-height: 24px;
   background-color: transparent;
-  color: #b1b9c5; /* klappt nicht */
   border: 0;
   display: flex;
   align-items: center;
@@ -623,7 +635,6 @@ label {
   background-color: #191c1f;
   border: 1px solid transparent;
   border-radius: 50%;
-  transition: opacity 0.3s ease;
   cursor: pointer;
   fill: #d9e2ec;
   display: flex;
@@ -684,12 +695,18 @@ sl-checkbox label {
   height: 40px;
   color: #d9e2ec;
   background-color: #3e4246;
-  transition: opacity 0.3s ease;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
   fill: #d9e2ec;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer__arrow-link:hover {
+  background-color: #4b5055;
+  color: var(--darkgrey);
 }
 
 .footer__arrow {
@@ -998,12 +1015,15 @@ sl-checkbox label {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .presentation__container {
     padding: 60px 70px 0;
 
     background-image: url(assets/anims/anim-1.jpg);
     background-repeat: no-repeat;
+  }
+
+  .specialty__media-vid {
+    object-position: 55% 30%;
   }
 
   .portrait__container {
