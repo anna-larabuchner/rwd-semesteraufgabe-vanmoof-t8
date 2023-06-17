@@ -31,11 +31,11 @@ window.onload = function () {
   lax.addElements(".presentation__heading-container", {
     scrollY: {
       scale: [
-        ["elCenterY+500", "elCenterY+900"],
+        ["elOutY", "elOutY+500"],
         [1, 0.7],
       ],
       opacity: [
-        ["elCenterY+900", "elCenterY+1100", "elCenterY+1400"],
+        ["elOutY+500", "elOutY+700", "elOutY+1000"],
         [1, 1, 0],
       ],
     },
@@ -58,7 +58,10 @@ window.onload = function () {
       ],
       translateY: [
         ["elCenterY+500", "elCenterY+600", "elCenterY+1100"],
-        [+100, -100, -600],
+        {
+          992: [+100, -100, -600],
+          993: [+100, -100, -770],
+        },
       ],
     },
   });
