@@ -182,6 +182,7 @@ header {
   font-family: NeueHaasUnicaPro;
   font-size: 14px;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .cta-button--primary {
@@ -202,7 +203,31 @@ header {
   border: 2px solid rgba(25, 28, 31, 0.7);
 }
 
-/* Looping Detail Video */
+/* sticky cta button */
+
+#cta-button--sticky {
+  width: 100vw;
+  padding: 20px 20px;
+
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Slogan section */
 
 .slogan__section {
   height: 250vh;
@@ -384,10 +409,8 @@ header {
 
 .specialty__media-vid {
   width: 100%;
-  height: 30vh;
   margin: 0 0 14px;
-  object-fit: cover;
-  object-position: 55% 50%;
+  object-fit: contain;
 }
 
 .specialty__media-text {
@@ -521,8 +544,11 @@ header {
 }
 
 .list__svg {
-  margin-left: 20px;
+  margin-left: 15px;
+  width: 25px;
+  height: 25px;
   transition: transform 0.4s ease 0s;
+  cursor: pointer;
 }
 
 .list__svg:hover {
@@ -810,7 +836,7 @@ sl-checkbox label {
   }
 
   .specialty__text-container {
-    width: 45%;
+    width: 50%;
     padding-right: 30px;
     margin-bottom: 40px;
     order: 1;
@@ -858,11 +884,12 @@ sl-checkbox label {
 
   .specialty__media-vid {
     height: 20vh;
+    object-position: 0;
   }
 
   .break__container {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: 100vh;
 
     position: absolute;
     top: 0px;
@@ -1016,12 +1043,13 @@ sl-checkbox label {
 }
 
 @media only screen and (min-width: 1024px) {
+  
   .presentation__container {
     padding: 60px 70px 0;
   }
 
-  .specialty__media-vid {
-    object-position: 55% 30%;
+  .specialty__text-container {
+    width: 45%;
   }
 
   .portrait__container {
@@ -1043,5 +1071,14 @@ sl-checkbox label {
   .footer__wrapper {
     max-width: 1280px;
     margin: 0 auto;
+  }
+}
+
+
+@media only screen and (min-width: 1281px) {
+  #cta-button--sticky {
+    max-width: 1280px;
+    margin: 0 calc((100vw - 1280px)/2);
+    padding: 20px 20px;
   }
 }

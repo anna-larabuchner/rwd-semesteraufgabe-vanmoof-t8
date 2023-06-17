@@ -1,4 +1,20 @@
 window.onload = function () {
+
+  const ctaButton = document.getElementById('cta-button--sticky');
+  const scrollFunc = () => {
+    // Get the current scroll value
+    let y = window.scrollY;
+    
+    // If the scroll value is greater than the window height, add show
+    if (y > 300) {
+      ctaButton.className = "show";
+    } else {
+      ctaButton.className = "hide";
+    }
+  };
+  window.addEventListener("scroll", scrollFunc);
+
+
   lax.init();
 
   // Add a driver that we use to control our animations
