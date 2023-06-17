@@ -1,9 +1,7 @@
 # VanMoof - T8
 
 Umgesetzt von: Anna-Lara Buchner
-
 Veranstaltung: Responsive Webdesign
-
 Studiengang: OnlineMedien B.Sc., 4. Semester
 
 Hochschule: Hochschule Furtwangen
