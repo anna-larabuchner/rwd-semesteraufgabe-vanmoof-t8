@@ -1,12 +1,12 @@
-# VanMoof - T8
+# Vorstellung Family B2
 
 Projekt: Branded Geometric Bodies
 
-Umgesetzt von: Anna-Lara Buchner
+Umgesetzt von: Anna-Lara Buchner, Tabea Ketterer, Larissa Osmanovic
 
-Veranstaltung: Responsive Webdesign
+Veranstaltung: Streaming-Anwendungen
 
-Studiengang: OnlineMedien B.Sc., 4. Semester
+Studiengang: OnlineMedien B.Sc., 5. Semester
 
 Hochschule: Hochschule Furtwangen
 
